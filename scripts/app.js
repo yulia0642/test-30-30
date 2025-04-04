@@ -132,62 +132,75 @@ class Result
 //Массив с результатами
 const results = 
 [
-	new Result("Вам многому нужно научиться", 0),
-	new Result("Вы уже неплохо разбираетесь", 2),
-	new Result("Ваш уровень выше среднего", 4),
-	new Result("Вы в совершенстве знаете тему", 6)
+	new Result("Иди смотри гонки", 0),
+    new Result("Кто-то посмотрел пару этапов и начал считать себя знатоком?)))", 3),
+    new Result("Продолжай смотреть гонки", 6),
+    new Result("Вы в совершенстве знаете тему!", 9)
 ];
 
+
 //Массив с вопросами
-const questions = 
-[
-	new Question("2 + 2 = ", 
-	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
-	]),
-
-	new Question("2 * 2 = ", 
-	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
-	]),
-
-	new Question("2 / 2 = ", 
-	[
-		new Answer("0", 0),
-		new Answer("1", 1),
-		new Answer("2", 0),
-		new Answer("3", 0)
-	]),
-
-	new Question("2 - 2 = ", 
-	[
-		new Answer("0", 1),
-		new Answer("1", 0),
-		new Answer("2", 0),
-		new Answer("3", 0)
-	]),
-
-	new Question("2 + 2 * 2 = ", 
-	[
-		new Answer("4", 0),
-		new Answer("6", 1),
-		new Answer("8", 0),
-		new Answer("10", 0)
-	]),
-
-	new Question("2 + 2 / 2 = ", 
-	[
-		new Answer("1", 0),
-		new Answer("2", 0),
-		new Answer("3", 1),
-		new Answer("4", 0)
-	])
+const questions = [
+    new Question("Сколько в среднем пилот теряет в весе во время Гран-при?", [
+        new Answer("500 граммов", 0),
+        new Answer("5 килограммов", 0),
+        new Answer("2 килограмма", 1),
+        new Answer("нисколько не теряет", 0)
+    ]),
+    new Question("Какая средняя температура в кабине пилота?", [
+        new Answer("5°C", 0),
+        new Answer("30°C", 0),
+        new Answer("50°C", 1),
+        new Answer("70°C", 0)
+    ]),
+    new Question("Формулу-1 считают мужским спортом, но сколько женщин приняли участие в гонках за всю историю?", [
+        new Answer("2 женщины", 0),
+        new Answer("5 женщин", 1),
+        new Answer("51 женщина", 0),
+        new Answer("больше 100 женщин", 0)
+    ]),
+    new Question("Для заправки болидов используют вертолетное оборудование. А какая скорость заправки?", [
+        new Answer("12 литров в секунду", 1),
+        new Answer("20 литров в секунду", 0),
+        new Answer("15 литров в секунду", 0),
+        new Answer("10 литров в секунду", 0)
+    ]),
+    new Question("Кто из чемпионов Формулы-1 учился гонять на Ладе?", [
+        new Answer("Нико Росберг", 0),
+        new Answer("Кими Райкконен", 1),
+        new Answer("Марк Уэббер", 0),
+        new Answer("Себастьян Феттель", 0)
+    ]),
+    new Question("Где находится самая быстрая из всех городских трасс Формулы-1?", [
+        new Answer("Монако", 0),
+        new Answer("Барселона", 0),
+        new Answer("Баку", 1),
+        new Answer("Сингапур", 0)
+    ]),
+    new Question("Гонщики Формулы-1 – суеверные люди. Под каким номером они не будут выступать?", [
+        new Answer("666", 0),
+        new Answer("13", 1),
+        new Answer("0", 0),
+        new Answer("3", 0)
+    ]),
+    new Question("Суеверны не только гонщики: механики считают, что во время двухчасовой гонки ни в коем случае нельзя:", [
+        new Answer("мыть руки", 1),
+        new Answer("шутить", 0),
+        new Answer("обходить болид спереди", 0),
+        new Answer("носить часы на левой руке", 0)
+    ]),
+    new Question("Сколько было этапов в самом длинном чемпионате Формулы 1?", [
+        new Answer("20", 0),
+        new Answer("24", 1),
+        new Answer("23", 0),
+        new Answer("34", 0)
+    ]),
+    new Question("Кто станет напарником Макса Ферстаппена в 2026?", [
+        new Answer("Даниэль Риккьярдо", 0),
+        new Answer("Юки Цунода", 0),
+        new Answer("Клон Макса", 1),
+        new Answer("Лиам Лоусон", 0)
+    ])
 ];
 
 //Сам тест
